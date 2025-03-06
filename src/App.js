@@ -4,8 +4,7 @@ import './App.css';
 // Import components
 import Header from './components/Header';
 import Hero from './components/Hero';
-import CustomFramingTool from './components/CustomFramingTool';
-import GalleryWallConfigurator from './components/GalleryWallConfigurator';
+
 import Inspiration from './components/Inspiration';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -38,8 +37,8 @@ function App() {
         <Hero />
         <section id="custom-framing" className="section">
           <div className="container">
-            <h2 className="section-title">Custom Framing Tool</h2>
-            <CustomFramingTool />
+           
+           
           </div>
         </section>
         <section id="gallery-walls" className="section">
