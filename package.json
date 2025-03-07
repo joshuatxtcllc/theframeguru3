@@ -2,6 +2,18 @@
   "name": "frame-guru",
   "version": "0.1.0",
   "private": true,
+  "description": "A project to manage and optimize frames",
+  "license": "MIT",
+  "keywords": ["frames", "optimization", "management"],
+  "author": "Your Name <your-email@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshuatxtcllc/theframeguru3.git"
+  },
+  "homepage": "https://github.com/joshuatxtcllc/theframeguru3#readme",
+  "bugs": {
+    "url": "https://github.com/joshuatxtcllc/theframeguru3/issues"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
