@@ -1,31 +1,13 @@
-
 import React from 'react';
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import Hero from './components/Hero';
 import './App.css';
 
-const Container = styled.div`
-  text-align: center;
-  padding: 20px;
-`;
-
-function App({ title, subtitle }) {
+function App() {
   return (
-    <Container>
-      <h1>{title}</h1>
-      <p>{subtitle}</p>
-    </Container>
+    <div className="app">
+      <Hero />
+    </div>
   );
 }
-
-App.propTypes = {
-  title: PropTypes.string,
-  subtitle: PropTypes.string,
-};
-
-App.defaultProps = {
-  title: 'The Frame Guru',
-  subtitle: 'Custom Framing Redefined',
-};
 
 export default App;

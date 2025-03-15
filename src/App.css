@@ -6,30 +6,30 @@
   --light-text-secondary: #666;
   --light-border: #e0e0e0;
   --light-card-bg: #ffffff;
-  
+
   /* Dark theme colors */
   --dark-bg: #1f1f2e;
   --dark-text: #f5f5f5;
   --dark-text-secondary: #b0b0b0;
   --dark-border: #3a3a4a;
   --dark-card-bg: #2a2a3a;
-  
+
   /* Accent colors */
   --accent-teal: #00ADB5;
   --accent-pink: #E31E6A;
   --accent-green: #21C685;
-  
+
   /* Common */
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
   --spacing-md: 2rem;
   --spacing-lg: 4rem;
   --spacing-xl: 6rem;
-  
+
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
   --border-radius-lg: 16px;
-  
+
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
   --transition-slow: 0.5s ease;
@@ -67,8 +67,7 @@ body.dark-theme {
 /* App Container */
 .app {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Main Content */
@@ -255,24 +254,27 @@ main {
 }
 
 @media (max-width: 768px) {
-  .grid-3, .grid-4 {
+  .grid-3,
+  .grid-4 {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .section {
     padding: var(--spacing-md) 0;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 576px) {
-  .grid-2, .grid-3, .grid-4 {
+  .grid-2,
+  .grid-3,
+  .grid-4 {
     grid-template-columns: 1fr;
   }
-  
+
   .btn {
     padding: 10px 20px;
     font-size: 0.9rem;
@@ -294,13 +296,23 @@ main {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .fade-in {
