@@ -1,0 +1,115 @@
+# The Frame Guru - Project Setup Instructions
+
+## Project Overview
+
+This is a React-based front-end for "The Frame Guru" website, featuring a custom framing tool, gallery wall configurator, and more. The site includes:
+
+- Dark/light mode toggle
+- Responsive design
+- Custom framing tool with live preview
+- Gallery wall configurator with different layout options
+- Interactive components and animations
+- Contact form with validation
+
+## Local Development Setup
+
+### Prerequisites
+
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
+
+### Step 1: Create a New React App
+
+```bash
+# Create a new React app using Create React App
+npx create-react-app the-frame-guru
+cd the-frame-guru
+```
+
+### Step 2: Replace the Source Files
+
+Replace the contents of the `public` and `src` folders with the provided files:
+
+- Replace `public/index.html` with the provided file
+- Replace all files in the `src` folder with the provided files
+
+### Step 3: Install Dependencies
+
+```bash
+# Install required dependencies
+npm install
+```
+
+### Step 4: Start the Development Server
+
+```bash
+# Start the development server
+npm start
+```
+
+This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+## Project Structure
+
+```
+the-frame-guru/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Header.css
+│   │   ├── Hero.js
+│   │   ├── Hero.css
+│   │   ├── CustomFramingTool.js
+│   │   ├── CustomFramingTool.css
+│   │   ├── GalleryWallConfigurator.js
+│   │   ├── GalleryWallConfigurator.css
+│   │   ├── Inspiration.js
+│   │   ├── Inspiration.css
+│   │   ├── About.js
+│   │   ├── About.css
+│   │   ├── Contact.js
+│   │   ├── Contact.css
+│   │   ├── Footer.js
+│   │   └── Footer.css
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+└── package.json
+```
+
+## Deployment Instructions
+
+### Deploying to Netlify
+
+1. Create a Netlify account if you don't have one
+2. Install Netlify CLI: `npm install -g netlify-cli`
+3. Build your project: `npm run build`
+4. Deploy to Netlify: `netlify deploy --prod`
+
+### Deploying to Vercel
+
+1. Install Vercel CLI: `npm install -g vercel`
+2. Run `vercel` in the project directory and follow the prompts
+3. For production deployment, run `vercel --prod`
+
+## Additional Notes
+
+- In a real production environment, you would want to:
+  - Add proper error handling for the form submission
+  - Connect the contact form to a backend service
+  - Replace placeholder images with actual assets
+  - Implement proper routing using React Router
+  - Add proper SEO optimization
+  - Consider adding state management with Redux or Context API for larger applications
+  - Add unit and integration tests
+
+## Custom Features to Implement Next
+
+- User authentication for saving framing preferences
+- Shopping cart functionality
+- Order history and tracking
+- Frame material and finish options with realistic texture previews
+- Integration with AR tools to visualize frames in a user's space
