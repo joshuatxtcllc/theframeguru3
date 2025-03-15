@@ -20,7 +20,7 @@ localPort = 3002
 externalPort = 3002
 
 [workflows]
-runButton = "React App"
+runButton = "React Dev"
 
 [[workflows.workflow]]
 name = "React App"
@@ -30,6 +30,15 @@ mode = "sequential"
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npm run build"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm start"
+
+[[workflows.workflow]]
+name = "React Dev"
+author = 27546771
+mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
