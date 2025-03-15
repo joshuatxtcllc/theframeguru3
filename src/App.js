@@ -1,9 +1,12 @@
+
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import './App.css';
 
 const Container = styled.div`
   text-align: center;
+  padding: 20px;
 `;
 
 function App({ title, subtitle }) {
