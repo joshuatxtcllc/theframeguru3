@@ -4,7 +4,11 @@
   "private": true,
   "description": "A project to manage and optimize frames",
   "license": "MIT",
-  "keywords": ["frames", "optimization", "management"],
+  "keywords": [
+    "frames",
+    "optimization",
+    "management"
+  ],
   "author": "Your Name <your-email@example.com>",
   "repository": {
     "type": "git",
@@ -15,9 +19,11 @@
     "url": "https://github.com/joshuatxtcllc/theframeguru3/issues"
   },
   "dependencies": {
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.1.15"
   },
   "scripts": {
     "start": "react-scripts start",
